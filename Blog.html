@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- daisyui css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body class="bg-slate-100">
+    <!-- header section start here -->
+    <header class="mx-auto w-4/5 pt-4">
+        <nav class=" flex justify-between p-6 bg-white rounded-2xl shadow-md my-5">
+            <a href="#" class="logo flex items-center text-3xl">
+                <img src="image/logo.png" alt="">
+                <h2 class="ml-4 text-slate-800">Dev <span class="font-bold">Board</span></h2>
+            </a>
+            <a href="index.html" class="flex justify-between items-center gap-10">
+                <button class="bg-blue-600 text-white rounded-lg py-2 px-3">Back to Desk</button>
+            </a>
+        </nav>
+    </header>
+    <!-- header section end here -->
+
+    <!-- main section start here -->
+     <main class="pb-12">
+        <section class="w-4/5 mx-auto rounded-2xl">
+            <h1 class="text-center text-3xl text-slate-800 font-bold my-5">Blogs</h1>
+
+            <div>
+                <div class="bg-white rounded-2xl my-5">
+                    <h1 class="px-8 py-5 text-xl font-bold border-b-2 border-dashed">Question-1: What are the different ways to select an element in the DOM?</h1>
+                    <p class="px-8 py-5">DOM (Document Object Model), I use GetElementByID to select an element by an ID.
+
+                        Select an element by a class name with GetElementByClassName.
+                        
+                        Select an HTML tag using getElementByTagName.
+                        
+                        CSS Class Name, ID name, HTML tag is a selector used in a querySelector.
+                        
+                        If I have a class name, HTML Tag, ID Name, repeated in my HTML page Then I want to select them in order, in that case I use the queryselectorall.</p>
+                </div>
+                <div class="bg-white rounded-2xl my-5">
+                    <h1 class="px-8 py-5 text-xl font-bold border-b-2 border-dashed">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                    <div class="px-8 py-5">
+                        <h2 class="font-bold my-3">innerHTML</h2>
+                        <p>
+                            If I want to create a tag inside the HTML with the JavaScript, I have to use innerHTML and it can also set the stream text but it should not be set for security reasons (to prevent XSS attacks)
+                        </p>
+                    </div>
+                    <div class="px-8 py-5">
+                        <h2 class="font-bold my-3">innerText</h2>
+                        <p>
+                            If I write any HTML tag inside innerText, it will be treated as text.
+                            If I select an element and there is an element hidden inside that element, it ignores.
+                        </p>
+                    </div>
+                    <div class="px-8 py-5">
+                        <h2 class="font-bold my-3">textContent </h2>
+                        <p>
+                            Explains everything about an element, including the hidden text inside it. It is much like textContent  but faster than textContent .
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl my-5">
+                    <h1 class="px-8 py-5 text-xl font-bold border-b-2 border-dashed">Question-3: What is event delegation in the DOM?</h1>
+                    <p class="px-8 py-5">This works because of event bubbling, where events bubble from the target element.</p>
+                </div>
+                <div class="bg-white rounded-2xl my-5">
+                    <h1 class="px-8 py-5 text-xl font-bold border-b-2 border-dashed">Question-4: What is event bubbling in the DOM?</h1>
+                    <p class="px-8 py-5">DOM (Document Object Model) is where an event starts with a target and then propagates (bubbles) to its parent elements and reaches the document object.</p>
+                </div>
+                <div class="bg-white rounded-2xl my-5">
+                    <h1 class="px-8 py-5 text-xl font-bold border-b-2 border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                    <p class="px-8 py-5">Create an element for document.createElement(), Add element for appendChild(), Remove a specific child for	removeChild()</p>
+                </div>
+            </div>
+        </section>
+     </main>
+    <!-- main section end here -->
+
+    <!-- daisyui js cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind js cdn link -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- main js -->
+     <script src="js/main.js"></script>
+</body>
+</html>
